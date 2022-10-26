@@ -1,0 +1,4 @@
+api:
+  addr: :18080
+  accesslog: true
+
