@@ -3,54 +3,54 @@
         "dns": [
             "54.176.199.149"
         ],
-        "publiceDns": "8.8.8.8"
+        "publicDns": "8.8.8.8"
     },
     "GB": {
         "dns": [
             "13.42.49.118"
         ],
-        "publiceDns": ""
+        "publicDns": ""
     },
     "ID": {
         "dns": [
             "147.139.163.150"
         ],
-        "publiceDns": ""
+        "publicDns": ""
     },
     "TH": {
         "dns": [
             "8.213.196.135"
         ],
-        "publiceDns": "223.5.5.5"
+        "publicDns": "223.5.5.5"
     },
     "MY": {
         "dns": [
             "47.250.58.244"
         ],
-        "publiceDns": "9.9.9.9"
+        "publicDns": "9.9.9.9"
     },
     "PH": {
         "dns": [
             "8.212.178.146"
         ],
-        "publiceDns": "124.6.188.3"
+        "publicDns": "124.6.188.3"
     },
     "SG": {
         "dns": [
             "118.189.211.221"
         ],
-        "publiceDns": "223.5.5.5"
+        "publicDns": "223.5.5.5"
     },
     "VN": {
         "dns": [
             "203.119.36.106"
         ],
-        "publiceDns": "223.5.5.5"
+        "publicDns": "223.5.5.5"
     },
     "TW": {
         "dns": [
             "168.95.1.1"
         ],
-        "publiceDns": "223.5.5.5"
+        "publicDns": "223.5.5.5"
     }
 }
