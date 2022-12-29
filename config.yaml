@@ -1,4 +1,4 @@
 api:
-  addr: :18080
+  addr: :8000
   accesslog: true
 
