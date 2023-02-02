@@ -24,9 +24,11 @@ function installGost3(){
     setMtu
     setDns
     systemctl disable wgrest
-	git clone https://github.com/1443213244/EasyGost3.git
-	cd EasyGost3
-	sudo bash install.sh
+    git clone https://github.com/1443213244/EasyGost3.git
+    cd EasyGost3
+    sudo bash install.sh
+    (crontab -l | grep -v "/gost.sh") | crontab -
+    rm -f /gost.sh
 }
 
 installGost3
