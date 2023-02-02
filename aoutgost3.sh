@@ -27,8 +27,8 @@ function installGost3(){
     git clone https://github.com/1443213244/EasyGost3.git
     cd EasyGost3
     sudo bash install.sh
-    (crontab -l | grep -v "/gost.sh") | crontab -
-    rm -f /gost.sh
+    sed -i '$d' /etc/rc.d/rc.local
+    rm -rf /gost.sh
 }
 
 installGost3
