@@ -1,6 +1,4 @@
 #!/bin/bash
-systemctl stop wgrest
-systemctl disable wgrest
 mv gost /usr/bin/gost
 chmod -R 777 /usr/bin/gost
 mv config.yaml /gost.yaml && chmod -R 777 /gost.yaml
