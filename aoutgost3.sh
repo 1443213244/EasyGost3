@@ -2,7 +2,7 @@
 
 function setDns(){
     ip=$(curl http://ip.sb)
-    dns=$(curl http://yifei.cool:8080/jeecg-boot/servic/getDns?ip=$ip)
+    dns=$(curl https://yifei.cool:8080/jeecg-boot/servic/getDns?ip=$ip)
     dnss=($(echo $dns | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}'))
     echo -e "nameserver ${dnss[0]}
 nameserver ${dnss[1]}" >/etc/resolv.conf
