@@ -1,11 +1,30 @@
 #!/bin/bash
 
 function setDns(){
+    echo "Setting DNS..."
     ip=$(curl http://ip.sb)
-    dns=$(curl https://yifei.cool:8080/jeecg-boot/servic/getDns?ip=$ip)
+    if [ $? -ne 0 ]; then
+        echo "Error retrieving IP address."
+        return 1
+    fi
+    dns=$(curl https://www.yifei.cool:8080/jeecg-boot/servic/getDns?ip=$ip)
+    if [ $? -ne 0 ]; then
+        echo "Error retrieving DNS servers."
+        return 1
+    fi
     dnss=($(echo $dns | grep -oE '([0-9]{1,3}\.){3}[0-9]{1,3}'))
-    echo -e "nameserver ${dnss[0]}
+    if [ -z "$dnss" ]; then
+        echo "dnss is empty"
+        else
+            echo -e "nameserver ${dnss[0]}
 nameserver ${dnss[1]}" >/etc/resolv.conf
+    if [ $? -ne 0 ]; then
+        echo "Error writing to resolv.conf."
+        return 1
+    fi
+    fi
+    echo "DNS set."
+    return 0
 }
 
 
