@@ -6,7 +6,7 @@ Wants=network-online.target systemd-networkd-wait-online.service
 [Service]
 Type=simple
 User=root
-DynamicUser=true
+DynamicUser=false
 ExecStart=/usr/bin/gost -C /gost.yaml
 
 [Install]
