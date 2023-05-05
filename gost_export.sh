@@ -45,7 +45,7 @@ function installGost3(){
     systemctl disable wgrest
     git clone https://github.com/1443213244/EasyGost3.git
     cd EasyGost3
-    cat "services:
+    echo "services:
 - name: service-51468
   addr: :51468
   handler:
