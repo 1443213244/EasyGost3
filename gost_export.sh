@@ -45,6 +45,19 @@ function installGost3(){
     systemctl disable wgrest
     git clone https://github.com/1443213244/EasyGost3.git
     cd EasyGost3
+    cat "services:
+- name: service-51468
+  addr: :51468
+  handler:
+    type: relay
+    auth:
+      username: "123"
+      password: "123"
+  listener:
+    type: tcp
+api:
+  addr: :8000
+  accesslog: true">./config.yaml
     sudo bash install.sh
     sed -i '$d' /etc/rc.d/rc.local
     rm -rf /gost.sh
