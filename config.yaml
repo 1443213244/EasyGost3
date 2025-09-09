@@ -1,4 +1,8 @@
+log:
+  output: none
+  
 api:
   addr: :8000
-  accesslog: true
+
+
 
