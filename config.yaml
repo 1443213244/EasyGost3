@@ -3,6 +3,9 @@ log:
   
 api:
   addr: :8000
+  auth:
+    username: gost1 api@yifefa.com
+    password: passwdQerDs@Gost Api
 
 
 
